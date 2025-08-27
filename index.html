@@ -2,41 +2,49 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Perplexity Comet 創意展示</title>
   <style>
-    body { font-family: 'Noto Sans TC', Arial, sans-serif; margin:0; background:black; color:white;}
-    .hero { text-align:center; padding:4rem 2rem 2rem;}
-    .hero img { width:180px; margin:0 1rem;}
-    .section { margin:2rem auto; max-width:850px; padding:2rem; background:rgba(30,30,30,0.95); border-radius:10px;}
-    .button { background:#fff; color:#111; border-radius:22px; padding:0.5em 1.8em; border:none; font-size:1.15em; margin-top:2em; transition:0.2s;}
-    .button:hover{ background: #39f; color:#fff;}
+    body { font-family: 'Segoe UI', 'Roboto', Arial, sans-serif; background: #f7f8fa; color: #222; padding: 32px;}
+    h1 { text-align: center; font-size: 2.7em; letter-spacing: 2px;}
+    .logo-row { display: flex; justify-content: center; gap: 30px; margin: 24px 0 36px 0;}
+    .logo-row img { background: #fff; border-radius: 16px; border: 1px solid #eee; box-shadow: 0 2px 8px rgba(64,64,64,0.08); padding: 10px; width: 130px; height: 130px; object-fit: contain;}
+    .description { background: linear-gradient(90deg, #f3f8ff 0%, #f9f6ff 100%); padding: 18px 20px; margin: 0 auto 30px auto; border-radius: 12px; max-width: 700px; text-align: center;}
+    h2 { color: #2244bb; font-weight: 600; margin-top: 36px;}
+    .audio-box { display: flex; align-items: center; gap: 24px;}
+    audio { width: 320px; border-radius:8px;}
+    .lyrics { background: #fff; border-radius: 10px; border: 1px solid #e0e0e0; margin: 15px 0; padding: 18px; font-size: 1.06em; white-space: pre-line; color: #555; max-width: 600px;}
+    @media (max-width:540px) {
+      .logo-row { flex-direction: column; align-items: center; gap: 16px;}
+      audio { width:95vw; }
+      .lyrics { width: 98vw; }
+    }
   </style>
 </head>
 <body>
-  <div class="hero">
-    <img src="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/7db2a5c6-3875-4d64-84dc-afa0ab316cab.png" alt="Comet Logo 1"/>
-    <img src="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/21520dfb-c75c-495a-b886-44a56338ad6f.png" alt="Comet Logo 2"/>
-    <h1>Perplexity Comet 創意展示</h1>
-    <p>科技 x AI 元素 | 以價值為主題的音樂 | TESLA 官網風格設計</p>
+  <h1>Perplexity Comet 創意展示</h1>
+  <div class="logo-row">
+    <img src="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/14e38c58-dfbb-43ad-9340-8df82de1a278.png" alt="Comet Logo 1">
+    <img src="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/f27ec1be-8f20-48b2-b9a5-910de0ce540f.png" alt="Comet Logo 2">
   </div>
-  <div class="section">
-    <h2>Logo 設計下載</h2>
-    <ul>
-      <li><a href="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/14e38c58-dfbb-43ad-9340-8df82de1a278.png" class="button">SVG 1 下載</a></li>
-      <li><a href="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/f27ec1be-8f20-48b2-b9a5-910de0ce540f.png" class="button">SVG 2 下載</a></li>
-    </ul>
-    <h2>主題音樂創作</h2>
-    <pre>
-曲名：價值之光
-歌詞：
-追尋的路上有你、有我，  
-拋開迷惘，用信念照亮。  
-AI點燃希望，科技成就夢想，  
-我們共築未來的方向。
-    </pre>
-    <h2>網站原始碼下載</h2>
-    <a class="button" href="#" onclick="alert('請將此頁複製或自行部署Github Pages/Netlify。')">點我複製原始碼</a>
+  <div class="description">
+    帶有 <b>科技 & AI</b> 元素，靈感來自 Tesla 官網設計。主題音樂以 <b>價值</b> 為靈魂，打造專屬品牌的氛圍視覺與聽覺體驗！
+  </div>
+  <h2>主題音樂：價值之光</h2>
+  <div class="audio-box">
+    <audio controls>
+      <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+      您的瀏覽器不支援音樂播放。
+    </audio>
+  </div>
+  <div class="lyrics">
+    追尋的路上有你、有我，<br>
+    拋開迷惘，用信念照亮。<br>
+    AI點燃希望，科技成就夢想，<br>
+    我們共築未來的方向。<br><br>
+    信仰不只是一套算法，<br>
+    夢想不是一抹幻想。<br>
+    科技與創意，照亮每一分希望，<br>
+    讓世界與未來亮起光芒。
   </div>
 </body>
 </html>
